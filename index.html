@@ -10,6 +10,45 @@
   <body>
 
   <form>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BCST</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Survey
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">My Tutorials</a></li>
+                <li><a class="dropdown-item" href="#">About BCST</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Legal</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Beta</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="text-bg-success p-3">Survey Form</div>
+    <br>
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Name</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -25,7 +64,7 @@
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       <div id="emailHelp" class="form-text"></div>
     </div>
-
+<br>
   <select class="form-select" aria-label="Default select example">
     <option selected>Do you like to code?</option>
     <option value="1">Yes</option>
@@ -33,7 +72,7 @@
     <option value="3">Sometimes</option>
     <option value="3">I'm not sure yet</option>
   </select>
-
+<br>
   <div class="code-preference">Do you prefer back end, front end, full stack?</div>
   <div class="input-group mb-3">
     <div class="input-group-text">
@@ -51,9 +90,28 @@
       <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
       Full-Stack
     </div>
+    <div class="input-group mb-3">
+      <div class="input-group-text">
+        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        I don't know yet
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+          All of them!
+        </div>
   </div>
   
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button style="margin:10px;" type="button" class="btn btn-success">Submit</button>
+
+  <div class="border d-table w-100">
+    <p class="d-table-cell">If you no longer interested in taking the survey click cancel.</p>
+    <div class="d-table-cell tar">
+      <button style="margin:10px;" type="button" class="btn btn-success">Cancel</button>
+    </div>
+  </div>
+
+
 </form>
   </body>
 </html>
