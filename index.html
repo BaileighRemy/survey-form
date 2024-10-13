@@ -30,26 +30,10 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Profile</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Survey
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">My Tutorials</a></li>
-                <li><a class="dropdown-item" href="#">About BCST</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Legal</a></li>
-              </ul>
-            </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Beta</a>
+                <a class="nav-link active" aria-current="page" href="#">Survey</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -74,6 +58,7 @@
       <div id="emailHelp" class="form-text"></div>
     </div>
 <br>
+<div style="width: 300px; margin:auto">
   <select class="form-select" aria-label="Default select example">
     <option selected>Do you like to code?</option>
     <option value="1">Yes</option>
@@ -81,80 +66,82 @@
     <option value="3">Sometimes</option>
     <option value="3">I'm not sure yet</option>
   </select>
+</div>
 <br>
-  <div class="code-preference">Do you prefer back end, front end, full stack?</div>
+  <div class="code-preference" style="width: 300px; margin:auto">Do you prefer back end, front end, full stack?</div>
   <div class="input-group mb-3">
-    <div class="input-group-text">
+    <div class="input-group-text" style="width: 300px; margin:auto">
       <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
       Back-End
     </div>
   <div class="input-group mb-3">
-    <div class="input-group-text">
+    <div class="input-group-text" style="width: 300px; margin:auto">
       <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
       Front-End
     </div>
     <div class="input-group mb-3">
-    <div class="input-group-text">
+    <div class="input-group-text" style="width: 300px; margin:auto">
       <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
       Full-Stack
     </div>
     <div class="input-group mb-3">
-      <div class="input-group-text">
+      <div class="input-group-text" style="width: 300px; margin:auto">
         <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
         I don't know yet
       </div>
       <div class="input-group mb-3">
-        <div class="input-group-text">
+        <div class="input-group-text" style="width: 300px; margin:auto">
           <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
           All of them!
         </div>
   </div>
 
-  <div class="code-preference">What is your experience level?
+  <div class="code-preference" style="width: 300px; margin:auto">What is your experience level?
   
-  <div class="form-check">
+  <div class="form-check" style="width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
     <label class="form-check-label" for="exampleRadios1">
       None!
     </label>
   </div>
-  <div class="form-check">
+  <div class="form-check" style="width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
     <label class="form-check-label" for="exampleRadios1">
       Beginner
     </label>
   </div>
-  <div class="form-check">
+  <div class="form-check" style="width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
     <label class="form-check-label" for="exampleRadios1">
       Intermediate
     </label>
   </div>
-  <div class="form-check">
+  <div class="form-check" style="width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
     <label class="form-check-label" for="exampleRadios1">
       Advanced
     </label>
   </div>
-  <div class="form-check">
+  <div class="form-check" style="width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
     <label class="form-check-label" for="exampleRadios1">
       I'm a seasoned pro!
     </label>
   </div>
 </div>
+</div>
 
 
-  <div>
+<br>
+<div style="width: 300px; margin:auto">
     <form>
       <div class="code-preference">Any comments or suggestions?</div>
-      <textarea class="type-in"></textarea>
+      <textarea class="type-in" style="width: 400px; height: 200px;"></textarea>
     </form>
+ <button style="margin:10px;" type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
   </div>
   <br>
- <button style="margin:10px;" type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
-  
-  
+
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -174,10 +161,8 @@
     </div>
   </div>
 
-
-<br>
   <div class="border d-table w-100">
-    <p class="d-table-cell">If you no longer interested in taking the survey click cancel.</p>
+    <p class="d-table-cell"> If you are no longer interested in taking the survey click cancel.</p>
     <div class="d-table-cell tar">
       <button style="margin:10px;" type="button" class="btn btn-success">Cancel</button>
     </div>
