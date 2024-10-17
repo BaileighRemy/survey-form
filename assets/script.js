@@ -35,7 +35,7 @@ const getExperience = () => {
             return option.value;
         }
     }
-    return null;
+    
 };
 
 
