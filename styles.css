@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.head {
-    text-align: center;
 
 }
 .header {
@@ -42,7 +39,7 @@ color: Green;
 }
 .column {
     float: left;
-    width: 33%;
+    width: 20%;
     padding: 5px;
 
 }
