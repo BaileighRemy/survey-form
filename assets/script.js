@@ -66,6 +66,7 @@ const addProfile = (name, gender, age, likeToCode, experience, preference) => {
 };
 
 
+
 function createProfileElement(profile) {
     // Create a new element for the profile
     const profileElement = document.createElement('div');
@@ -117,11 +118,26 @@ profiles.forEach(profile => {
 });
 
 
+const textArea = document.getElementById("suggestions"); 
+function saveToLocalStorage() {
+const textValue = textArea.value;
+localStorage.setItem("suggestions", textValue);
+}
+
+function retrieveFromLocalStorage() {
+    const storedValue = localStorage.getItem("suggestions");
+
+    if (storedValue) {
+        textArea.value = storedValue;
+    }
+};
+
 submissionInfo.addEventListener('click', (e) => {
     e.preventDefault();
     console.log("Button clicked");
     experience = getExperience();
-    preference = getpreference(); //calling these functions to get what is selected
+    preference = getpreference();
+    suggestions = getsuggestions(); //calling these functions to get what is selected
 
 
     const newProfile = addProfile(
