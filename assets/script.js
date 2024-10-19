@@ -111,7 +111,7 @@ function createProfileElement(profile) {
     const profilesContainer = document.getElementById('profilesContainer'); // Ensure this is the correct parent
     profilesContainer.appendChild(profileElement);
 }
-
+console.log(profiles)
 
 profiles.forEach(profile => {
     createProfileElement(profile);
@@ -132,12 +132,15 @@ function retrieveFromLocalStorage() {
     }
 };
 
+if (submissionInfo) {
+
+
 submissionInfo.addEventListener('click', (e) => {
     e.preventDefault();
     console.log("Button clicked");
     experience = getExperience();
     preference = getpreference();
-    suggestions = getsuggestions(); //calling these functions to get what is selected
+   // suggestions = getsuggestions(); //calling these functions to get what is selected
 
 
     const newProfile = addProfile(
@@ -163,3 +166,4 @@ submissionInfo.addEventListener('click', (e) => {
 
 
 });
+}
