@@ -7,51 +7,59 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
   </head>
-  <body>
 
-  <form>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <img src="Images/B.C.S.T. 2.png" alt="Bcst" width="200" height="150">
-      <div style="padding-left:20px">
-      </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="project.html">Profile</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Survey</a>
-            </li>
-          </ul>
+  <body style="background-color:rgb(12, 80, 47);>
+</style>
+    <header id="navbar">
+      <nav class="navbar navbar-expand-lg bg-success-subtle rounded shadow-lg">
+        <img src="Images/B.C.S.T. 2.png" alt="Bcst" width="200" height="150">
+        <div style="padding-left:20px">
         </div>
-      </div>
-    </nav>
-    <div class="text-bg-success p-3"><b>Survey Form</b></div>
+          <div class="rounded shadow-lg width=500" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" style="color:white"; aria-current="page" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:white"; href="project.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" style="color:white"; aria-current="page" href="index.html">Survey</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+    <div class="text-bg-success p-3 rounded shadow-lg"><b>Survey Form</b></div>
     <br>
 
 
 
-    <div  class="mb-3" style="width: 300px; margin:auto">
-      <label for="exampleInputEmail1" class="form-label">Name</label>
+    <div  class="mb-3" style="color:white; width: 300px; margin:auto">
+      <label for="exampleInputEmail1" class="fw-semibold">Name</label>
       <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
       <div id="emailHelp" class="form-text"></div>
     </div>
-    <div class="mb-3" style="width: 300px; margin:auto">
-      <label for="exampleInputEmail1" class="form-label">Gender</label>
+    <div class="mb-3" style="color:white; width: 300px; margin:auto">
+      <label for="exampleInputEmail1" class="fw-semibold">Gender</label>
       <input type="email" class="form-control" id="gender" aria-describedby="emailHelp">
       <div id="emailHelp" class="form-text"></div>
     </div>
-    <div class="mb-3" style="width: 300px; margin:auto">
-      <label for="exampleInputEmail1" class="form-label">Age</label>
+    <div class="mb-3" style="color:white; width: 300px; margin:auto">
+      <label for="exampleInputEmail1" class="fw-semibold">Age</label>
       <input type="number" class="form-control" id="age" aria-describedby="emailHelp">
       <div id="emailHelp" class="form-text"></div>
     </div>
 <br>
 <div style="width: 300px; margin:auto">
-  <select class="form-select" id="likeToCode" aria-label="Default select example">
+  <select class="fw-semibold" id="likeToCode" aria-label="Default select example">
     <option selected>Do you like to code?</option>
     <option value="Yes">Yes</option>
     <option value="No">No</option>
@@ -60,7 +68,7 @@
   </select>
 </div>
 <br>
-  <div class="code-preference" style="width: 300px; margin:auto">Do you prefer back end, front end, full stack?</div>
+  <div class="fw-semibold" style="color:white; width: 300px; margin:auto">Do you prefer back end, front end, full stack?</div>
   <div class="input-group mb-3">
     <div class="input-group-text" style="width: 300px; margin:auto">
       <input class="form-check-input mt-0" type="checkbox"  id="backEnd" name="preference" value="Back-End" aria-label="Checkbox for following text input">
@@ -88,33 +96,33 @@
         </div>
   </div>
 
-  <div class="experience" style="width: 300px; margin:auto">What is your experience level?
+  <div class="fw-semibold" style="color:white; width: 300px; margin:auto">What is your experience level?
   
-  <div class="form-check" style="width: 300px; margin:auto">
+  <div class="form-check" style="color:white; width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="experience" id="none" value="None!" checked>
     <label class="form-check-label" for="exampleRadios1">
       None!
     </label>
   </div>
-  <div class="form-check" style="width: 300px; margin:auto">
+  <div class="form-check" style="color:white; width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="experience" id="beginner" value="Beginner" checked>
     <label class="form-check-label" for="exampleRadios1">
       Beginner
     </label>
   </div>
-  <div class="form-check" style="width: 300px; margin:auto">
+  <div class="form-check" style="color:white; width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="experience" id="intermediate" value="Intermediate" checked>
     <label class="form-check-label" for="exampleRadios1">
       Intermediate
     </label>
   </div>
-  <div class="form-check" style="width: 300px; margin:auto">
+  <div class="form-check" style="color:white; width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="experience" id="advanced" value="Advanced" checked>
     <label class="form-check-label" for="exampleRadios1">
       Advanced
     </label>
   </div>
-  <div class="form-check" style="width: 300px; margin:auto">
+  <div class="form-check" style="color:white; width: 300px; margin:auto">
     <input class="form-check-input" type="radio" name="experience" id="pro" value="I'm a seasoned pro" checked>
     <label class="form-check-label" for="exampleRadios1">
       I'm a seasoned pro!
@@ -123,12 +131,13 @@
 </div>
 </div>
 <br>
-<div style="width: 300px; margin:auto">
+<div style="color:white; width: 300px; margin:auto">
     <form>
-      <div class="code-preference">Any comments or suggestions?</div>
+      <div class="fw-semibold">Any comments or suggestions?</div>
+      <br>
       <textarea class="type-in" id="comments" name="comments" style="width: 400px; height: 200px;"></textarea>
     </form>
-    <button type="button" id=submission class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" id=submission class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       Submit
     </button>
   </div>
@@ -155,14 +164,20 @@
       </div>
     </div>
   </div>
-</form>
+
+
+  <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+    <div class="card-body">
+      <p class="card-text">Click cancel to go back to homepage.</p>
+    <div class="card-header"><a href="homepage.html"><button type="button" class="btn btn-secondary">Cancel</button></a></div>
+    </div>
+
 
 
 <div id="profilesContainer" style="display:none;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="assets/script.js"></script>
-
 
 </body>
 </html>
