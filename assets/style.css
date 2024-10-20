@@ -1,0 +1,42 @@
+
+.a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    width: 300px;
+    height:10px;
+    margin: auto;
+    
+ 
+ }
+
+ li {
+    list-style: none;
+    background-color: green;
+    color: black;
+    position: relative;
+    left: 700px;
+ }
+ li a {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+ 
+ }
+ 
+ footer {
+    position: relative;
+    right: 500px;
+    top: 300px;
+    width:400px;
+    height: 50px;
+    border: 3px solid #21ad5e;
+
+
+ }
+
+
+
+ 
+
+ 
