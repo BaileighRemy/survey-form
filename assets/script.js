@@ -5,6 +5,7 @@ const ageInput = document.getElementById('age');
 const likeToCode = document.getElementById('likeToCode');
 let preference;
 let experience;
+const comments = document.getElementById('comments')
 
 
 const getpreference = () => {
@@ -24,8 +25,6 @@ const getpreference = () => {
 preference = getpreference();
 
 
-
-
 const getExperience = () => {
     const experienceOptions = document.getElementsByName('experience');
     for (const option of experienceOptions) {
@@ -35,26 +34,24 @@ const getExperience = () => {
             return option.value;
         }
     }
-    return null;
+    
 };
 
 
 experience = getExperience();
 
 
-
-
 const profiles = JSON.parse(localStorage.getItem("profiles")) || [];
 
-
-const addProfile = (name, gender, age, likeToCode, experience, preference) => {
+const addProfile = (name, gender, age, likeToCode, experience, preference, comments) => {
     profiles.push({
         name,
         gender,
         age,
         likeToCode,
         experience,
-        preference
+        preference,
+        comments,
     });
 
 
@@ -62,7 +59,7 @@ const addProfile = (name, gender, age, likeToCode, experience, preference) => {
     console.log(localStorage.getItem("profiles"));
 
 
-    return { name, gender, age, likeToCode, experience, preference };
+    return { name, gender, age, likeToCode, experience, preference, comments };
 };
 
 
@@ -96,6 +93,9 @@ function createProfileElement(profile) {
     const preferenceElement = document.createElement('p');
     preferenceElement.textContent = `Preference: ${profile.preference}`;
 
+    const commentsElement = document.createElement('p');
+    commentsElement.textContent = `Comments: ${profile.comments}`;
+
 
     // Append child elements to the profile element
     profileElement.appendChild(nameElement);
@@ -104,6 +104,7 @@ function createProfileElement(profile) {
     profileElement.appendChild(likeToCodeElement);
     profileElement.appendChild(experienceElement);
     profileElement.appendChild(preferenceElement);
+    profileElement.appendChild(commentsElement);
 
 
     // Make sure to append the profileElement to a valid parent element
@@ -117,11 +118,14 @@ profiles.forEach(profile => {
 });
 
 
+if (submissionInfo) {
+
 submissionInfo.addEventListener('click', (e) => {
     e.preventDefault();
     console.log("Button clicked");
     experience = getExperience();
     preference = getpreference(); //calling these functions to get what is selected
+    const commentsValue= comments.value
 
 
     const newProfile = addProfile(
@@ -131,6 +135,7 @@ submissionInfo.addEventListener('click', (e) => {
         likeToCode.value,
         experience,
         preference,
+        commentsValue,
     );
 
 
@@ -140,10 +145,6 @@ submissionInfo.addEventListener('click', (e) => {
     nameInput.value = "";
     genderInput.value = "";
     ageInput.value = "";
-
-
-
-
-
-
+    comments.value = "";
 });
+}
