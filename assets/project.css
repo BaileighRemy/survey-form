@@ -1,10 +1,14 @@
+#navbarSupportedContent {
+    background-color: green;
+
+}
 
 .profile {
     padding: 20px;
     font-size: medium;
     border: 7px;
     border-style: solid;
-    border-color: darkgreen;
+    border-color: green;
    
     
 }
