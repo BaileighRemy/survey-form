@@ -1,6 +1,10 @@
 #navbarSupportedContent {
     background-color: green;
+}
 
+.nav {
+    border-color: white;
+    border-radius: 0 20px 0 20px;
 }
 
 .profile {
@@ -9,6 +13,10 @@
     border: 7px;
     border-style: solid;
     border-color: green;
-   
-    
+}
+
+img {
+    border-radius: 0 20px 0 20px;
+    margin: 5px 5px 5px 5px;
+    border-color: black 5px;
 }

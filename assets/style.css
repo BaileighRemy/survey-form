@@ -10,6 +10,11 @@
  
  }
 
+ .maincard {
+   text-align: center;
+   font-size: 30px;
+ }
+
  li {
     list-style: none;
     background-color: green;
@@ -34,7 +39,15 @@
 
  }
 
-
+.card {
+   position: fixed;
+   top: 600px;
+   left: 5px;
+   bottom: 0;
+   right: 0;
+   height: 15%;
+   width: 20%;
+}
 
  
 
